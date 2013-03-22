@@ -11,9 +11,8 @@ LOG_FILENAME = 'report.log'
 log = logging.getLogger()
 
 
-def set_logger(filename=None, name=None, level=None):
-    filename = filename or '/logs/batch-file-processing/debug.log'
-    name = name or 'bfp'
+def set_logger(filename=None, level=None):
+    filename = filename or'log.log'
     level = level or 'INFO'
 
     format = ("%(asctime)s [%(levelname)-5s] | %(message)s")
